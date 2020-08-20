@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAF0F1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="403dp"
+        android:layout_height="457dp"
+        android:layout_marginTop="172dp"
+        android:gravity="center|center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.649">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="6dp">
+
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="278dp"
+                    android:layout_height="117dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/total"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:visibility="invisible"
+                    tools:ignore="MissingConstraints,RtlCompat"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="98dp" />
+
+                <TextView
+                    android:id="@+id/active"
+                    android:layout_width="278dp"
+                    android:layout_height="117dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/active"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:visibility="invisible"
+                    tools:ignore="MissingConstraints,RtlCompat"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="240dp" />
+
+                <TextView
+                    android:id="@+id/recoverd"
+                    android:layout_width="278dp"
+                    android:layout_height="117dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/recoverd"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:visibility="invisible"
+                    tools:ignore="MissingConstraints,RtlCompat"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="377dp" />
+
+                <TextView
+                    android:id="@+id/death"
+                    android:layout_width="278dp"
+                    android:layout_height="117dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/death"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:visibility="invisible"
+                    tools:ignore="MissingConstraints,RtlCompat"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="514dp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="INDIA'S COVID-19 COUNT"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2F363F"
+        android:foregroundGravity="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/covid_icon"
+        android:layout_width="70dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/animate"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/state"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="672dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/state"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/abc_vector_test"
+        android:paddingLeft="100dp"
+        android:textAlignment="gravity"
+        android:text="State "
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.888"
+        tools:ignore="MissingConstraints,RtlCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

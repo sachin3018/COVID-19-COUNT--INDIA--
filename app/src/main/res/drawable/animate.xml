@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/covid"
+        android:duration="2000"/>
+    <item
+        android:drawable="@drawable/handwash"
+        android:duration="2000"/>
+    <item
+        android:drawable="@drawable/mask"
+        android:duration="2000"/>
+    <item
+        android:drawable="@drawable/sanitizer"
+        android:duration="2000"/>
+
+</animation-list>
